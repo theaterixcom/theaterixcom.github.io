@@ -258,19 +258,6 @@
         MediaBox('.mediabox');
     </script>
     <script>
-        $(".gallery-box").hover(function() {
-            $(this).children('figure').addClass('lofi');
-            $(this).children('figure').removeClass('inkwell');
-            $(this).children(".talk-title").removeClass("animated fadeInUp");
-            $(this).children(".talk-title").addClass("animated fadeOutDown");
-            // MAKE A IMG ROTATOR OF 1,2,3,4,5 IMAGES OF YOUTUBE THUMBNAILS AUTOMATICALLY WITH A TIME GAP
-        });
-        $(".gallery-box").mouseleave(function() {
-            $(this).children('figure').addClass('inkwell');
-            $(this).children('figure').removeClass('lofi');
-            $(this).children(".talk-title").removeClass("animated fadeOutDown");
-            $(this).children(".talk-title").addClass("animated fadeInUp");
-        });
         $(".ion-ios-play").hover(function() {
             $(this).addClass('animated infinite pulse');
         });

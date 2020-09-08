@@ -83,7 +83,7 @@
             }
 
             lightbox = this.template(
-                '<div class="mediabox-wrap" role="dialog" aria-hidden="false"><div class="mediabox-content" role="document" tabindex="0"><span class="mediabox-close" aria-label="close"></span><iframe src="{embed}?autoplay=1&modestbranding=1" frameborder="0" allowfullscreen></iframe></div></div>', {
+                '<div class="mediabox-wrap" role="dialog" aria-hidden="false"><div class="mediabox-content" role="document" tabindex="0"><span class="mediabox-close" aria-label="close"></span><iframe src="{embed}?autoplay=1&autoplay=1&modestbranding=1&showinfo=0&rel=0&disablekb=0" frameborder="0" allowfullscreen></iframe></div></div>', {
                     embed: embedLink
                 });
 
