@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Vue Infinite Scroll with JSON API</title>
+	
+	<!-- Importing CSSs -->
+	<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
+	<link rel="stylesheet" href="style.css">
+
+	<!-- Favicon -->
+	<link rel="icon" type="image/png" href="favicon.png">
+</head>
+<body>
+	<div id="app">
+		<div class="container">
+			<div class="row my-5">
+				<div class="col-lg-4">
+					<h1>Vue infinite scroll</h1>
+					<p class="lead">Gets a JSON from an API Endpoint and display the results in application view.</p>
+				</div>
+			</div>
+			<div v-infinite-scroll="loadMore" infinite-scroll-disabled="busy" infinite-scroll-distance="limit" class="row row-eq-height">
+				<div v-for="post in posts" data-aos="zoom-out-up" data-aos-offset="100" data-aos-easing="ease-out-back" class="col-lg-4 my-4">
+					<div class="card shadow-lg h-100">
+						<div class="card-body">
+							<h5 class="h5 text-success">{{ post.title }}</h5>
+							<hr>
+							<p>{{ post.body }}</p>
+						</div>
+						<div class="card-footer">
+							<small class="text-muted">userId: {{ post.userId }}</small>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div id="loading" class="py-5">
+				<!-- Loading icon, should be visible only when the application state is "busy" -->
+				<img src="loading.gif" class="d-block m-auto" data-aos="zoom-out-up" alt="Loading results" title="Loading more results, please wait..." v-show="busy">
+			</div>
+		</div>
+	</div>
+	
+	<!-- Importing libraries -->
+	<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+	<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+	<script src="https://unpkg.com/vue-infinite-scroll@2.0.2/vue-infinite-scroll.js"></script>
+	<script src="script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,14 @@
+body {
+  background: #eee;
+}
+
+.card {
+  border: none;
+  border-radius: 10px;
+}
+.card-body {
+  border: none;
+}
+.card-footer {
+  border: none;
+}
