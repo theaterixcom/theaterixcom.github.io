@@ -33,7 +33,10 @@
                             <hr>
                             <p>{{ post.body }}</p>
                         </div>
-                        <img src="{{ post.cover }}" alt="">
+                        v-bind:
+                        <img v-src="post.cover" alt="">
+                        <img :src="post.cover" alt="">
+                        <img v-bind:src="'post.cover'" alt="">
                         <div class="card-footer">
                             <small class="text-muted">userId: {{ post.userId }}</small>
                         </div>
