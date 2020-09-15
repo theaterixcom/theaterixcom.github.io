@@ -1,6 +1,4 @@
-# TODO
-
----
+## TODO
 
 ### PHASE 1 | DEADLINE: OCTOBER 1ST
 
@@ -18,12 +16,18 @@
 - [ ] Explore sources and add all the catalogue.
 - [ ] Publish a Press Release.
 
+---
+
 ### PHASE 2 | DEADLINE: NOVEMBER 1ST
 
 - [ ] Add ads.
 - [ ] Add a slider with featured content.
 - [ ] Make a CMS for new content.
 
+---
+
 ### PHASE 3 | DEADLINE: DECEMBER 1ST
 
 - [ ] Edit and publish unedited Teatra content.
+
+---
