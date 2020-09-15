@@ -1,5 +1,5 @@
 // Defines the API endpoint.
-const api = 'posts.json';
+const api = 'api/posts.json';
 
 new Vue({
     el: "#app",
