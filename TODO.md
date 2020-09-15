@@ -1,9 +1,29 @@
-### TODO
+# TODO
 
 ---
 
-- [x] Document the README.md file in the [README_TEMPLATES](./README_TEMPLATES) folder.
-- [ ] Make an IoT template (Refer to the various Arduino project documentations for assistance). This template must be detailed and should go in-depth into the various hardware terminologies.
-- [ ] Make a minimal IoT template.
-- [ ] Add a COMMIT_MESSAGE_GUIDELINES.md file.
-- [ ] Translate the [templates](https://github.com/kylelobo/The-Documentation-Compendium#templates) into different languages - Chinese, French, German, Hindi, Italian, Japanese, Korean, Portuguese, Russian, Spanish, etc.
+### PHASE 1 | DEADLINE: OCTOBER 1ST
+
+- [ ] Write properly the [README](/README.md) file.
+- [ ] Migrate jQuery functions to the VUE version.
+- [ ] Put all the JS and CSS in the same file.
+- [ ] Define API structure considerating filters actions (evaluate multiple files, for example: texts and image separate).
+- [ ] Write properly the [CONTRIBUTING](/CONTRIBUTING.md) file. Add a donation section.
+- [ ] Add filters.
+- [ ] Make the UI. Evaluate the new Netflix popup standard.
+- [ ] Add all the Teatra catalogue.
+- [ ] Add all the Teatrix catalogue.
+- [ ] Add all the Cennarium catalogue.
+- [ ] Add all the Digital Theatre catalogue.
+- [ ] Explore sources and add all the catalogue.
+- [ ] Publish a Press Release.
+
+### PHASE 2 | DEADLINE: NOVEMBER 1ST
+
+- [ ] Add ads.
+- [ ] Add a slider with featured content.
+- [ ] Make a CMS for new content.
+
+### PHASE 3 | DEADLINE: DECEMBER 1ST
+
+- [ ] Edit and publish unedited Teatra content.
