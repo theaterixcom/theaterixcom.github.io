@@ -28,8 +28,8 @@
             <div v-infinite-scroll="loadMore" infinite-scroll-disabled="busy" infinite-scroll-distance="limit" class="row row-eq-height">
                 <div v-for="post in posts" data-aos="zoom-out-up" data-aos-offset="100" data-aos-easing="ease-out-back" class="col-lg-4 my-4">
                     <!-- PLAY -->
-                    <div class="col-lg-4 col-sm-6">
-                        <a v-if="post.type === 'link'" target="_blank" :href="post.url">
+                    <div v-if="post.type === 'link'" class="col-lg-4 col-sm-6">
+                        <a target="_blank" :href="post.url">
                             <figure>
                                 <img v-if="post.cover" :src="post.cover" alt="" style="max-width: 100%; width: 100%; height: auto;">
                             </figure>
@@ -43,7 +43,9 @@
                             {{ post.type }}
                             <h1 class="text-primary talk-title">{{ post.title }}</h1>
                         </a>
-                        <a v-if="post.type === 'media'" class="gallery-box mediabox" href="javascript: void(0)" :type="post.url">
+                    </div>
+                    <div v-if="post.type === 'media'" class="col-lg-4 col-sm-6">
+                        <a class="gallery-box mediabox" href="javascript: void(0)" :type="post.url">
                             <figure>
                                 <img v-if="post.cover" :src="post.cover" alt="" style="max-width: 100%; width: 100%; height: auto;">
                             </figure>
