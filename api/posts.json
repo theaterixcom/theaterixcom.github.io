@@ -5,7 +5,8 @@
         "url": "https://www.youtube.com/watch?v=aFpE82bkNP0",
         "title": "Trópico del Plata",
         "body": "La puesta de Trópico del Plata está centrada en la actuación como principal fuerza escénica.\nCon cierto lenguaje rioplatense, los textos de Trópico del Plata toman velocidad y extrañeza en el cuerpo de la actriz. Ese es el escenario donde friccionan las fuerzas narrativas.\n“Contar la historia de Aimé y Guzmán es narrar cómo un cuerpo es atravesado por otra voz. Trópico del Plata es una historia que, aunque paradójicamente llamamos “de amor”, enmascara y disfraza ciertas violencias. Mientras escribía la obra pensaba que ambos personajes, Aimé y Guzmán, debían ser actuados/relatados por la misma actriz. Esa decisión fue un recurso dramático que hoy constituye el lenguaje de la puesta en escena.”, apunta Rubén Sabadini acerca de la pieza.\nDeclarada de interés cultural por la Legislatura de la Ciudad de Buenos Aires en 2014, Trópico del Plata realizó siete temporadas en el Vera Vera Teatro, La Carpintería, El Kafka, Espacio Callejón, Sala Beckett.",
-        "publisher": "TEATRA"
+        "publisher": "TEATRA",
+        "type": "media"
     },
     {
         "userId": 1,
@@ -14,6 +15,7 @@
         "url": "https://www.teatrix.com/video/manzi-la-vida-en-orsai",
         "title": "MANZI. LA VIDA EN ORSAI",
         "body": "Protagonizado por Jorge Suárez y Julia Calvo, el musical recupera las zonas más vitales de Homero Manzi: su relación con Nelly Omar, su amistad con Troilo y Castillo y su pasión infinita, el tango. La obra permaneció tres temporadas en cartel y recibió múltiples galardones, entre ellos el Premio Hugo Federal, Estrella de Mar y Teatro del Mundo.",
-        "publisher": "TEATRIX"
+        "publisher": "TEATRIX",
+        "type": "link"
     }
 ]

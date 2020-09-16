@@ -31,7 +31,7 @@
                 el.addEventListener('click', function(e) {
                     e.preventDefault();
 
-                    var link = this.parseUrl(el.getAttribute('href'));
+                    var link = this.parseUrl(el.getAttribute('type'));
                     this.render(link);
                     this.events();
                 }.bind(this), false);

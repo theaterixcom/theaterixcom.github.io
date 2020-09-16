@@ -29,19 +29,20 @@
                 <div v-for="post in posts" data-aos="zoom-out-up" data-aos-offset="100" data-aos-easing="ease-out-back" class="col-lg-4 my-4">
                     <!-- PLAY -->
                     <div class="col-lg-4 col-sm-6">
-                        <a class="gallery-box mediabox" :href="post.url">
-                            <figure>
-                                <img v-if="post.cover" :src="post.cover" alt="" style="max-width: 100%; width: 100%; height: auto;">
-                            </figure>
-                            <div class="gallery-box-caption">
-                                <div class="gallery-box-content">
-                                    <div>
-                                        <i class="icon-lg ion-ios-play"></i>
+                        <a v-if="post.type == media" class="gallery-box mediabox" href="javascript: void(0)" :type="post.url">
+                            <a v-if="post.type == link" target="_blank" :href="post.url">
+                                <figure>
+                                    <img v-if="post.cover" :src="post.cover" alt="" style="max-width: 100%; width: 100%; height: auto;">
+                                </figure>
+                                <div class="gallery-box-caption">
+                                    <div class="gallery-box-content">
+                                        <div>
+                                            <i class="icon-lg ion-ios-play"></i>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                            <h1 class="text-primary talk-title">{{ post.title }}</h1>
-                        </a>
+                                <h1 class="text-primary talk-title">{{ post.title }}</h1>
+                            </a>
                     </div>
                     <!-- /PLAY -->
                 </div>
@@ -78,7 +79,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.js"></script>
     <script src="js/plays.js"></script>
     <script src="js/mediabox.js"></script>
-    <script src="js/scroll.js"></script>
     <script>
         MediaBox('.mediabox');
     </script>
@@ -90,6 +90,7 @@
             $(this).removeClass('animated infinite pulse');
         });
     </script>
+    <script src="js/scroll.js"></script>
 </body>
 
 </html>
