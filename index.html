@@ -14,7 +14,7 @@
     <link rel="stylesheet" type="text/css" href="css/scroll.css">
     <link rel="stylesheet" type="text/css" href="css/plays.css" />
     <link rel="stylesheet" type="text/css" href="css/fonts.css" />
-    <link rel="stylesheet" type="text/css" href="css/mediabox.css" />
+    <link rel="stylesheet" type="text/css" href="css/modal-video.min.css">
 
     <!-- Favicon -->
     <link rel="icon" type="image/png" href="favicon.png">
@@ -43,20 +43,19 @@
                         </a>
                     </div>
                     <div v-if="post.type === 'media'" class="col-lg-4 col-sm-6">
-                        <a class="gallery-box mediabox" :href="post.url">
-                            <figure>
-                                <img v-if="post.cover" :src="post.cover" alt="" style="max-width: 100%; width: 100%; height: auto;">
-                            </figure>
-                            <div class="gallery-box-caption">
-                                <div class="gallery-box-content">
-                                    <div>
-                                        <i class="icon-lg ion-ios-play"></i>
-                                    </div>
+                        <figure>
+                            <img v-if="post.cover" :src="post.cover" alt="" style="max-width: 100%; width: 100%; height: auto;">
+                        </figure>
+                        <div class="gallery-box-caption">
+                            <div class="gallery-box-content">
+                                <div>
+                                    <i class="icon-lg ion-ios-play js-modal-btn" :data-video-id="post.url"></i>
                                 </div>
                             </div>
-                            {{ post.type }}
-                            <h1 class="text-primary talk-title">{{ post.title }}</h1>
-                        </a>
+                        </div>
+                        {{ post.type }}
+                        <button class="js-modal-btn" :data-video-id="post.url">Open Video</button>
+                        <h1 class="text-primary talk-title">{{ post.title }}</h1>
                     </div>
                     <!-- /PLAY -->
                 </div>
@@ -67,19 +66,6 @@
                 <img src="img/loading.gif" class="d-block m-auto" data-aos="zoom-out-up" alt="Loading results" title="Loading more results, please wait..." v-show="busy">
             </div>
         </div>
-        <div id="galleryModal" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
-            <div class="modal-dialog modal-lg">
-                <div class="modal-content">
-                    <div class="modal-body">
-                        <img src="https://placehold.it/1200x700/222?text=..." id="galleryImage" class="img-responsive" />
-                        <p>
-                            <br/>
-                            <button class="btn btn-primary btn-lg center-block" data-dismiss="modal" aria-hidden="true">Close <i class="ion-android-close"></i></button>
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
     </div>
 
     <!-- Importing libraries -->
@@ -87,137 +73,10 @@
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="https://unpkg.com/vue-infinite-scroll@2.0.2/vue-infinite-scroll.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="http://code.jquery.com/jquery-2.2.4.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
-    <script src="js/scroll.js"></script>
-    <script>
-        /*! mediabox v1.1.2 | (c) 2016 Pedro Rogerio | https://github.com/pinceladasdaweb/mediabox */
-        (function(root, factory) {
-            "use strict";
-            if (typeof define === 'function' && define.amd) {
-                define([], factory);
-            } else if (typeof exports === 'object') {
-                module.exports = factory();
-            } else {
-                root.MediaBox = factory();
-            }
-        }(this, function() {
-            "use strict";
-
-            var MediaBox = function(element) {
-                if (!this || !(this instanceof MediaBox)) {
-                    return new MediaBox(element);
-                }
-
-                if (!element) {
-                    return false;
-                }
-
-                this.selector = element instanceof NodeList ? element : document.querySelectorAll(element);
-                this.root = document.querySelector('body');
-                this.run();
-            };
-
-            MediaBox.prototype = {
-                run: function() {
-                    Array.prototype.forEach.call(this.selector, function(el) {
-                        el.addEventListener('click', function(e) {
-                            e.preventDefault();
-
-                            var link = this.parseUrl(el.getAttribute('href'));
-                            console.log("link: ", link);
-                            this.render(link);
-                            this.events();
-                        }.bind(this), false);
-                    }.bind(this));
-
-                    this.root.addEventListener('keyup', function(e) {
-                        if ((e.keyCode || e.which) === 27) {
-                            this.close(this.root.querySelector('.mediabox-wrap'));
-                        }
-                    }.bind(this), false);
-                },
-                template: function(s, d) {
-                    var p;
-
-                    for (p in d) {
-                        if (d.hasOwnProperty(p)) {
-                            s = s.replace(new RegExp('{' + p + '}', 'g'), d[p]);
-                        }
-                    }
-                    return s;
-                },
-                parseUrl: function(url) {
-                    var service = {},
-                        matches;
-
-                    if (matches = url.match(/^.*(youtu.be\/|v\/|u\/\w\/|embed\/|watch\?v=)([^#\&\?]*).*/)) {
-                        service.provider = "youtube";
-                        service.id = matches[2];
-                    } else if (matches = url.match(/https?:\/\/(?:www\.)?vimeo.com\/(?:channels\/|groups\/([^\/]*)\/videos\/|album\/(\d+)\/video\/|)(\d+)(?:$|\/|\?)/)) {
-                        service.provider = "vimeo";
-                        service.id = matches[3];
-                    } else {
-                        service.provider = "Unknown";
-                        service.id = '';
-                    }
-
-                    return service;
-                },
-                render: function(service) {
-                    var embedLink,
-                        lightbox;
-
-                    if (service.provider === 'youtube') {
-                        embedLink = 'https://www.youtube.com/embed/' + service.id;
-                    } else if (service.provider === 'vimeo') {
-                        embedLink = 'https://player.vimeo.com/video/' + service.id;
-                    } else {
-                        throw new Error("Invalid video URL");
-                    }
-
-                    lightbox = this.template(
-                        '<div class="mediabox-wrap" role="dialog" aria-hidden="false"><div class="mediabox-content" role="document" tabindex="0"><span class="mediabox-close" aria-label="close"></span><iframe src="{embed}?autoplay=1&autoplay=1&modestbranding=1&showinfo=0&rel=0&disablekb=0" frameborder="0" allowfullscreen></iframe></div></div>', {
-                            embed: embedLink
-                        });
-
-                    this.root.insertAdjacentHTML('beforeend', lightbox);
-                },
-                events: function() {
-                    var wrapper = document.querySelector('.mediabox-wrap');
-
-                    wrapper.addEventListener('click', function(e) {
-                        if (e.target && e.target.nodeName === 'SPAN' && e.target.className === 'mediabox-close' || e.target.nodeName === 'DIV' && e.target.className === 'mediabox-wrap') {
-                            this.close(wrapper);
-                        }
-                    }.bind(this), false);
-                },
-                close: function(el) {
-                    if (el === null) return true;
-                    var timer = null;
-
-                    if (timer) {
-                        clearTimeout(timer);
-                    }
-
-                    el.classList.add('mediabox-hide');
-
-                    timer = setTimeout(function() {
-                        var el = document.querySelector('.mediabox-wrap');
-                        if (el !== null) {
-                            this.root.removeChild(el);
-                        }
-                    }.bind(this), 500);
-                }
-            };
-
-            return MediaBox;
-        }));
-    </script>
-    <script>
-        MediaBox('.mediabox');
-    </script>
+    <script src="js/main.js"></script>
     <script>
         $(".ion-ios-play").hover(function() {
             $(this).addClass('animated infinite pulse');
@@ -226,6 +85,7 @@
             $(this).removeClass('animated infinite pulse');
         });
     </script>
+    <script src="js/modal-video.js"></script>
 </body>
 
 </html>
