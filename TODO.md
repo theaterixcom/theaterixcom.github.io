@@ -3,8 +3,8 @@
 ### PHASE 1 | DEADLINE: OCTOBER 1ST
 
 - [x] Write properly the [README](/README.md) file.
-- [ ] Migrate jQuery functions to the VUE version.
-- [ ] Migrate to https://github.com/kaorun343/vue-youtube-embed
+- [x] Migrate jQuery functions to the VUE version.
+- [ ] Migrate to https://codepen.io/fripas/pen/rRzzwr
 - [ ] Put all the JS and CSS in the same file.
 - [ ] Define API structure considerating filters actions (evaluate multiple files, for example: texts and image separate).
 - [ ] Write properly the [CONTRIBUTING](/CONTRIBUTING.md) file. Add a donation section.
