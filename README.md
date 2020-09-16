@@ -1,13 +1,17 @@
 <p align="center">
-  <a href="" rel="noopener">
- <img src="img/theaterix-branding.png" alt="Project logo"></a>
+  <a href="https://www.theaterix.com">
+    <img src="img/theaterix-branding.png" alt="THEATERIX">
+  </a>
+</p>
+<p align="center">
+  Stories so big they can not fit on the big screen
+</p>
+<p align="center">
+  <a href="https://www.theaterix.com">www.theaterix.com</a>
 </p>
 
 ---
 
-<p align="center"> Stories so big they can not fit on the big screen
-    <br> 
-</p>
 <div align="center">
 
   [![Status](https://img.shields.io/badge/status-active-success.svg)]() 
@@ -20,90 +24,118 @@
 ---
 
 ## 📝 Table of Contents
+
 - [About](#about)
 - [Getting Started](#getting_started)
-- [Deployment](#deployment)
-- [Usage](#usage)
+- [Usage](#usage) & [Deployment](#deployment)
+- [Running the tests](#tests)
 - [Built Using](#built_using)
 - [TODO](/TODO.md)
 - [Contributing](/CONTRIBUTING.md)
 - [Authors](#authors)
 - [Acknowledgments](#acknowledgement)
+- [About this README](#about-readme)
+- [Disclaimer](#disclaimer)
 
 ---
 
-## 🧐 About <a name = "about"></a>
-THEATERIX, Stories so big they can not fit on the big screen.
+## 👨‍💻 About <a name="about"></a>
+
+[THEATERIX](https://www.theaterix.com) is an online catalogue of full-length plays of theater.
+
+This is a non-profit project and only seeks to boost the theater industry and the culture of consuming alternative content at home.
+
+[THEATERIX](https://www.theaterix.com), Stories so big they can not fit on the big screen.
 
 ---
 
-## 🏁 Getting Started <a name = "getting_started"></a>
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See [deployment](#deployment) for notes on how to deploy the project on a live system.
+## 🏁 Getting Started <a name="getting_started"></a>
 
-### Prerequisites
-What things you need to install the software and how to install them.
+These instructions will get you a copy of the project up and running on your local machine for development, testing and production purposes. See [deployment](#deployment) for notes on how to deploy the project on a live system.
 
-```
-Give examples
-```
+This is a very simple web application that uses the VueJs framework to get results from an external or internal API. This application points to an API endpoint that returns a list of JSON results. When the user reaches the page limit, we load more results from the API.
 
-### Installing
-A step by step series of examples that tell you how to get a development env running.
+**Notes**:
 
-Say what the step will be
+- I'm importing libraries directly in my HTML just to simplify the full cycle of development and deploy.
+- Maybe you should use dependency managers such as [NPM](https://www.npmjs.com/get-npm) or [Yarn](https://yarnpkg.com/getting-started/install#global-install) to handle the packages and other resources.
 
-```
-Give the example
-```
+### Prerequisites:
 
-And repeat
+Install **Git**: [https://git-scm.com/book/en/v2/Getting-Started-Installing-Git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git)
 
-```
-until finished
+---
+
+Open your terminal and type:
+
+```bash 
+git clone https://github.com/theaterixcom/theaterixcom.github.io.git
 ```
 
-End with an example of getting some data out of the system or using it for a little demo.
+After that, just type:
 
-## 🔧 Running the tests <a name = "tests"></a>
-Explain how to run the automated tests for this system.
-
-### Break down into end to end tests
-Explain what these tests test and why
-
-```
-Give an example
+```bash 
+cd theaterixcom.github.io
 ```
 
-### And coding style tests
-Explain what these tests test and why
-
+If you don´t have experience with terminals, you can open the [GitHub Desktop app](https://desktop.github.com/) in your OS and go to `File` > `Clone Repository` > `URL` tab and type:
 ```
-Give an example
+theaterixcom/theaterixcom.github.io
 ```
+After, just click the `CLONE` button.
 
-## 🎈 Usage <a name="usage"></a>
-Add notes about how to use the system.
 
-## 🚀 Deployment <a name = "deployment"></a>
-Add additional notes about how to deploy this on a live system.
+Finally you have the simplest option: download and unzip the following `.zip` file with all the files and resources:
 
-## ⛏️ Built Using <a name = "built_using"></a>
-- [MongoDB](https://www.mongodb.com/) - Database
-- [Express](https://expressjs.com/) - Server Framework
+[https://github.com/theaterixcom/theaterixcom.github.io/archive/master.zip](https://github.com/theaterixcom/theaterixcom.github.io/archive/master.zip)
+
+---
+
+## 🎈 Usage & 🚀 Deployment <a name="usage"></a> <a name="deployment"></a>
+
+To avoid `CORS` (Cross-origin resource sharing) related issues you have to deploy the project on a server of any type that accepts `http` requests.
+
+---
+
+## 🔧 Running the tests <a name="tests"></a>
+
+### Work in Progress.
+
+---
+
+## ⛏️ Built Using <a name="built_using"></a>
+
 - [VueJs](https://vuejs.org/) - Web Framework
-- [NodeJs](https://nodejs.org/en/) - Server Environment
+- [GitHub Pages](https://pages.github.com/) - Deployment environment
 
-## ✍️ Authors <a name = "authors"></a>
-- [@kylelobo](https://github.com/kylelobo) - Idea & Initial work
+---
 
-See also the list of [contributors](https://github.com/kylelobo/The-Documentation-Compendium/contributors) who participated in this project.
+## ✍️ Authors <a name="authors"></a>
 
-## 🎉 Acknowledgements <a name = "acknowledgement"></a>
-- Hat tip to anyone whose code was used
-- Inspiration
-- References
+- [@eliooses](https://github.com/eliooses) - Idea & Initial work
 
-## About this readme
+See also the list of [contributors](https://github.com/theaterixcom/theaterixcom.github.io/contributors) who participated in this project.
 
-- https://shields.io/category/issue-tracking
-- https://github.com/kylelobo/The-Documentation-Compendium
+---
+
+## 🎉 Acknowledgements <a name="acknowledgement"></a>
+
+This project is a tribute to the memory and work of my brother [Pablo Osés](https://twitter.com/pablooses), who until the last day of his life dedicated his time to making the theater reach everyone.
+
+Hat tip to Valeria Vaccari and Analia Finollo, the best partners one could have had, and to anyone whose code was used.
+
+---
+
+## 📖 About this README <a name="about-readme"></a>
+
+This [README](/README.md) file was made with some third-party open source or free-to-use tools like the ones listed below:
+
+- [Shields IO](https://shields.io/)
+- [The Documentation Compendium](https://github.com/kylelobo/The-Documentation-Compendium)
+- [Emojipedia](https://emojipedia.org/)
+
+---
+
+## ⚠️ DISCLAIMER <a name="disclaimer"></a>
+
+### Work in Progress.
