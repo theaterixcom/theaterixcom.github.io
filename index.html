@@ -49,12 +49,12 @@
                         <div class="gallery-box-caption">
                             <div class="gallery-box-content">
                                 <div>
-                                    <i class="icon-lg ion-ios-play js-modal-btn" :data-video-id="post.url"></i>
+                                    <i class="icon-lg ion-ios-play js-modal-video" :data-video-id="post.url"></i>
                                 </div>
                             </div>
                         </div>
                         {{ post.type }}
-                        <button class="js-modal-btn" :data-video-id="post.url">Open Video</button>
+                        <button class="js-modal-video" :data-video-id="post.url">Open Video</button>
                         <h1 class="text-primary talk-title">{{ post.title }}</h1>
                     </div>
                     <!-- /PLAY -->
@@ -85,9 +85,9 @@
             $(this).removeClass('animated infinite pulse');
         });
     </script>
-    <script src="js/jquery-modal-video.js"></script>
+    <script src="js/modal-video.js"></script>
     <script>
-        $(".js-modal-btn").modalVideo();
+        new ModalVideo('.js-modal-video');
     </script>
 </body>
 
