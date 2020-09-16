@@ -32,6 +32,7 @@
                     e.preventDefault();
 
                     var link = this.parseUrl(el.getAttribute('type'));
+                    console.log("link: ", link);
                     this.render(link);
                     this.events();
                 }.bind(this), false);
