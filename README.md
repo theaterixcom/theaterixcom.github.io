@@ -36,6 +36,7 @@
 - [Acknowledgments](#acknowledgement)
 - [About this README](#about-readme)
 - [Disclaimer](#disclaimer)
+- [Contact](#contact)
 
 ---
 
@@ -136,6 +137,19 @@ This [README](/README.md) file was made with some third-party open source or fre
 
 ---
 
-## ⚠️ DISCLAIMER <a name="disclaimer"></a>
+## ©️ DISCLAIMER <a name="disclaimer"></a>
 
-### Work in Progress.
+All code and text in this project belongs to their respective authors. All rights over them are completely reserved.
+
+All the code originally developed for this project is under its respective [LICENSE](/LICENSE).
+
+All the multimedia content that the project shows is obtained from legal sources and they are only linked, never hosted by [THEATERIX](https://www.theaterix.com), its [authors](#authors) or its [contributors](https://github.com/theaterixcom/theaterixcom.github.io/contributors).
+
+
+Any claim about multimedia content must be resolved on the platforms that host the content.
+
+---
+
+## 📧 CONTACT <a name="contact"></a>
+
+Feel free to contact us with any questions at [elio@theaterix.com](elio@theaterix.com).
