@@ -127,16 +127,6 @@ Hat tip to Valeria Vaccari and Analia Finollo, the best partners one could have 
 
 ---
 
-## 📖 About this README <a name="about-readme"></a>
-
-This [README](/README.md) file was made with some third-party open source or free-to-use tools like the ones listed below:
-
-- [Shields IO](https://shields.io/)
-- [The Documentation Compendium](https://github.com/kylelobo/The-Documentation-Compendium)
-- [Emojipedia](https://emojipedia.org/)
-
----
-
 ## ©️ DISCLAIMER <a name="disclaimer"></a>
 
 All code and text in this project belongs to their respective authors. All rights over them are completely reserved.
@@ -153,3 +143,13 @@ Any claim about multimedia content must be resolved on the platforms that host t
 ## 📧 CONTACT <a name="contact"></a>
 
 Feel free to contact us with any questions at [elio@theaterix.com](elio@theaterix.com).
+
+---
+
+## 📖 About this README <a name="about-readme"></a>
+
+This [README](/README.md) file was made with some third-party open source or free-to-use tools like the ones listed below:
+
+- [Shields IO](https://shields.io/)
+- [The Documentation Compendium](https://github.com/kylelobo/The-Documentation-Compendium)
+- [Emojipedia](https://emojipedia.org/)
