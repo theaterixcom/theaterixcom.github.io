@@ -34,9 +34,9 @@
 - [Contributing](/CONTRIBUTING.md)
 - [Authors](#authors)
 - [Acknowledgments](#acknowledgement)
-- [About this README](#about-readme)
 - [Disclaimer](#disclaimer)
 - [Contact](#contact)
+- [About this README](#about-readme)
 
 ---
 
