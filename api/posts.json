@@ -21,10 +21,11 @@
     {
         "userId": 1,
         "id": 3,
-        "url": "https://www.teatrix.com/video/manzi-la-vida-en-orsai",
-        "title": "FAKE MANZI. LA VIDA EN ORSAI",
-        "body": "FAKE Protagonizado por Jorge Suárez y Julia Calvo, el musical recupera las zonas más vitales de Homero Manzi: su relación con Nelly Omar, su amistad con Troilo y Castillo y su pasión infinita, el tango. La obra permaneció tres temporadas en cartel y recibió múltiples galardones, entre ellos el Premio Hugo Federal, Estrella de Mar y Teatro del Mundo.",
-        "publisher": "FAKE TEATRIX",
-        "type": "fake"
+        "cover": "https://img.youtube.com/vi/mvCVjsE3K6o/maxresdefault.jpg",
+        "url": "mvCVjsE3K6o",
+        "title": "Las Hambrientas",
+        "body": "¿Hasta dónde seríamos capaces de llegar para saciar nuestros deseos?\nUna familia de un pueblo del interior. Ellos supieron tener su momento de prosperidad y ahora apenas subsisten, hambrientos pero indoblegables.\nEsta noche tienen invitados importantes a cenar, invitados que, de salir todo bien, podrían ayudarlos a cumplir sus objetivos, pero la heladera está rota y la carne regalada no aguanta bien con el hielo, y comida, no hay más. De todas maneras la cena se realizará a como dé lugar porque ellos están esperanzados, hambrientos, ilusos.\nLos rumores de pueblo apuntan hacia el antiguo caserón. Dicen que Ximena hace brujería por eso todo lo que ella toca tiende a secarse. Su hermano Oscar, prepara una intervención anatómico-musical a partir del concepto de tela viva. La tela viva es Milagros, su prima, su pareja, a quien somete a una rigurosa dieta para que dé con el tono exacto. El huesudo tiene los huesos como de vidrio, dicen que es una maldición por fornicar con parientes, y el Armando parece ser la salvación.",
+        "publisher": "TEATRA",
+        "type": "media"
     }
 ]
