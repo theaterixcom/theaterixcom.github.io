@@ -4,13 +4,14 @@
 
 - [x] Write properly the [README](/README.md) file.
 - [x] Migrate jQuery functions to the VUE version.
-- [ ] Migrate to https://codepen.io/fripas/pen/rRzzwr
-- [ ] Put all the JS and CSS in the same file.
+- [x] Migrate to https://codepen.io/fripas/pen/rRzzwr
+- [x] Put all the JS and CSS in the same file.
 - [ ] Define API structure considerating filters actions (evaluate multiple files, for example: texts and image separate).
+- [ ] Write properly the [README](/README.md) file with the `THEATERIX-CORE REPO` and make one for this one.
 - [ ] Write properly the [CONTRIBUTING](/CONTRIBUTING.md) file. Add a donation section.
 - [ ] Add filters.
 - [ ] Make the UI. Evaluate the new Netflix popup standard.
-- [ ] Make
+- [ ] Make a deployment pipeline for build in `THEATERIX-CORE REPO` and deploy in `theaterixcom.github.io REPO`.
 - [ ] Add all the Teatra catalogue.
 - [ ] Add all the Teatrix catalogue.
 - [ ] Add all the Cennarium catalogue.
