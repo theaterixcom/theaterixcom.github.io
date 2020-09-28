@@ -6,9 +6,9 @@
 - [x] Migrate jQuery functions to the VUE version.
 - [x] Migrate to https://codepen.io/fripas/pen/rRzzwr
 - [x] Put all the JS and CSS in the same file.
-- [ ] Define API structure considerating filters actions (evaluate multiple files, for example: texts and image separate).
 - [x] Add filters.
-- [ ] Add Bootstrap by NPM.
+- [x] Add Bootstrap by NPM.
+- [ ] Define API structure considerating filters actions (evaluate multiple files, for example: texts and image separate).
 - [ ] Make the UI. Evaluate the new Netflix popup standard.
 - [ ] Write properly the [README](/README.md) file with the `THEATERIX-CORE REPO` and make one for this one.
 - [ ] Write properly the [CONTRIBUTING](/CONTRIBUTING.md) file. Add a donation section.
