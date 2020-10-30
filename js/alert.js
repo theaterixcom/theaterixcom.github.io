@@ -1,1 +1,3 @@
+<script>
 alert("FUNCIONA!");
+</script>
